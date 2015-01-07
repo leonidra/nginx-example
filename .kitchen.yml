@@ -1,6 +1,8 @@
 ---
 driver:
   name: vagrant
+  network:
+    - ["forwarded_port", {guest: 80, host: 8080}]
 
 provisioner:
   name: chef_zero
@@ -11,4 +13,9 @@ platforms:
 suites:
   - name: default
     run_list:
+        - recipe[nginx]
     attributes:
+
+  - name: example
+    run_list:
+        - recipe[nginx-example]
