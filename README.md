@@ -13,5 +13,4 @@ The following cookbooks are required
 Attributes
 ----------
 
-**NOTE** The best way to work with required tools is to install chef-dk
-[ChefDK](www.getchef.com/downloads/chef-dk/)
+**NOTE** The best way to work with required tools is to install [ChefDK](www.getchef.com/downloads/chef-dk/)
